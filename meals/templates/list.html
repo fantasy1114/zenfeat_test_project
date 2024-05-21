@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meals by Category</title>
+</head>
+<body>
+    <h1>Meals</h1>
+    <ul>
+        {% for meal in meals %}
+            <li>{{ meal.dish_name }} - {{ meal.ingredients }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
